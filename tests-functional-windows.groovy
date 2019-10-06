@@ -8,7 +8,7 @@ properties(
     ]
 )
 
-
+sleep 10
 currentBuild.upstreamBuilds?.each { b ->
     echo b.getFullProjectName()
 }
