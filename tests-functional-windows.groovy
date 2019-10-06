@@ -8,6 +8,10 @@ properties(
     ]
 )
 
+if (!currentBuild.upstreamBuilds) {
+    return
+}
+
 sleep 10
 currentBuild.upstreamBuilds?.each { b ->
     echo b.getFullProjectName()
