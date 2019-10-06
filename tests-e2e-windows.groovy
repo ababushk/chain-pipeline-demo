@@ -12,3 +12,7 @@ properties(
 currentBuild.upstreamBuilds?.each { b ->
     echo b.getFullProjectName()
 }
+
+// trying to find out repository name
+gitUrl = scm.getUserRemoteConfigs()[0]?.getUrl()
+echo "Repository URL - ${gitUrl}"
