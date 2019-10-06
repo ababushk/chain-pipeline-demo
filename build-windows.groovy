@@ -2,5 +2,5 @@
 
 stage("build") {
     echo "building"
-    sleep 30
+    sleep 10
 }
