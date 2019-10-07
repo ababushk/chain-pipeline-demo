@@ -131,7 +131,7 @@ multibranchPipelineJob('dsl-chain-folder/functional-windows') {
                         // Defines a custom context label to be sent as part of Github Status notifications for this project.
                         notificationContextTrait {
                             // The text of the context label for Github status notifications.
-                            contextLabel("build/windows")
+                            contextLabel("functional/windows")
                             // Appends the relevant suffix to the context label based on the build type.
                             typeSuffix(false)
                         }
